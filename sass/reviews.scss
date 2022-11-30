@@ -1,0 +1,110 @@
+.reviews {
+    margin-bottom: 114px;
+}
+.revievs__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 30px;
+}
+.reviews__item{
+    .reviews__picture {
+        max-width: 270px;
+        height: 270px;
+        margin-bottom: 30px;
+        .reviews__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .reviews__person {
+        font-weight: 700;
+        @include fontZ;
+        text-transform: capitalize;
+        color: $heading-color;
+        margin-bottom: 5px;
+    }
+    .reviews__post {
+        @include fontZW;
+        text-transform: uppercase;
+        color: $mainBG-btn;
+        margin-bottom: 17px;
+    }
+    .reviews__descr {
+        @include fontZW;
+        color: $text2;
+        margin-bottom: 38px;
+    }
+    .reviews__link:not(:last-child) {
+        margin-right: 6px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .reviews {
+        margin-bottom: 80px;
+        .revievs__list{
+            column-gap: 25px;
+        }
+        .reviews__picture{
+            margin-bottom: 25px;
+        }
+        .reviews__person {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 5px;
+        }
+        .reviews__post {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 22px;
+        }
+        .reviews__descr {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 40px;
+        }
+        .reviews__link{
+            .reviews__link-img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .reviews__link:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .revievs__list {
+        grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+        .reviews__item{
+            // margin-bottom: 56px;
+            .reviews__picture{
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .reviews{
+        margin-bottom: 40px;
+        .revievs__list{
+            grid-gap: 56px;
+            .reviews__post{
+                margin-bottom: 40px;
+            }
+            .reviews__descr{
+                margin-bottom: 55px;
+            }
+            .reviews__link{
+                .reviews__link-img{
+                    width: 39px;
+                    height: 39px;
+                }
+            }
+        }
+    }
+}

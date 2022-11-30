@@ -1,0 +1,114 @@
+.slider {
+    margin-bottom: 114px;
+    .swiper-pagination {
+        margin-top: 25px;
+        position: relative;
+        top: 0;
+    }
+    .slider__dot{
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border: none;
+    }
+}
+.slider__row {
+    display: grid;
+    grid-template-columns: 740px 1fr;
+    grid-template-rows: 490px;
+    grid-gap: 130px;
+    background: $purple;
+    .slider__pic {
+        width: 740px;
+        height: 490px;
+        .slider__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .slider__content {
+        max-width: 470px;
+        margin-top: 116px;
+        .slider__title {
+            display: flex;
+            align-items: center;
+            font-family: 'Cardo', serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 49px;
+            text-transform: capitalize;
+            min-height: 230px;
+        }
+        .slider__subtitle {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 28px;
+            text-transform: uppercase;
+            height: 28px;
+        }
+    }
+}
+@media screen and (max-width: 1366px){
+    .slider__row{
+        grid-gap: 88px;
+        .slider__content{
+            margin-top: 61px;
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .slider{
+        margin-bottom: 80px;
+    }
+    .slider__row{
+        grid-template-columns: 502px 1fr;
+        grid-template-rows: 332px;
+        .slider__pic{
+            width: 502px;
+            height: 332px;
+        }
+        .slider__content{
+            max-width: 330px;
+            .slider__title{
+                font-size: 22px;
+                line-height: 32px;
+                min-height: 128px;
+                margin-bottom: 14px;
+            }
+            .slider__subtitle{
+                height: 19px;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .slider{
+        margin-bottom: 35px;
+    }
+    .slider__row{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 0;
+        .slider__pic{
+            width: 502px;
+            height: 332px;
+            width: 100%;
+        }
+        .slider__content{
+            margin-top: 0;
+            text-align: center;
+            .slider__title{
+                width: 275px;
+                min-height: 206px;
+            }
+            .slider__subtitle{
+                height: 25px;
+                margin-bottom: 95px;
+            }
+        }
+    }
+}

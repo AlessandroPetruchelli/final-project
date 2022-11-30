@@ -1,0 +1,18 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+@mixin fontZ {
+    font-size: 24px;
+    line-height: 28px;
+}
+@mixin fontZW {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+@mixin  centerTransform ($tcenter, $upper){
+    text-align: $tcenter;
+    text-transform: $upper;
+}

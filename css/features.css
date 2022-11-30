@@ -1,0 +1,32 @@
+.features {
+  margin-bottom: 116px;
+}
+
+.features__block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 305px);
+  grid-gap: 88px 38px;
+}
+
+.features__item .features__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.features__item .features__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2D3033;
+  margin-bottom: 20px;
+}
+.features__item .features__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #6C7279;
+}
